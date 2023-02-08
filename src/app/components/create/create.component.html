@@ -1,0 +1,22 @@
+<div>
+    name:  <input  >                               
+    capasiti:  <input type="number">
+    ocupide:  <input type="number">
+    <button (click)="spremi()" 
+    class="spremi">Spremi</button>
+</div>
+
+<div class="tabla">
+    <div style="display: flex;">
+        <div (click)="navigateToDetail(room.id)" *ngFor="let room  of rooms" >
+        ID: {{room.id}}
+        Name: {{room.name}}
+        capasiti : {{room.capasiti}}
+        ocupide  : {{room.ocupide}}
+        </div>
+        </div>
+</div>
+
+
+<!-- [(ngModel)]="name" pokušavam dohvatiti svoj input i spremiti ga sa funkcijom spremi
+funkcija sprema ali sprema moje hard kodane podatke koje startaju od nula -->
